@@ -4,16 +4,15 @@ const User = require('../models').db.user;
 
 const saveUser = async (req, res, next) => {
 
-    req.body
 
     try {
-        const UserName = await User.findOne({
+        const username = await User.findOne({
             where: {
                 userName: req.body.userName
             }
         });
 
-        if (UserName) {
+        if (username) {
 
             return res.status(409).send('The Username alrady token');
 
@@ -32,7 +31,6 @@ const saveUser = async (req, res, next) => {
             next();
         }
     } catch (err) {
-
         console.log(err);
 
     }
