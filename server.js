@@ -6,11 +6,13 @@ const postRuoter = require('./routes/post.route');
 const commentPouter = require('./routes/comment.route')
 const heandleError = require('./error-handlers/500');
 const heandleErrorPageNotFound = require('./error-handlers/404');
+const user = require('./routes/user.route');
 
 app.use(cors());
 app.use(express.json());
 app.use(postRuoter);
 app.use(commentPouter);
+app.use(user);
 
 app.get('/', (req, res, next) => {
     res.status(200).json({
@@ -21,8 +23,10 @@ app.get('/', (req, res, next) => {
 function start(port) {
     app.listen(port, () => { console.log(`the server start for port ${port}`) });
 }
+
 app.use(heandleErrorPageNotFound);
 app.use(heandleError);
+
 module.exports = {
     start,
     app
