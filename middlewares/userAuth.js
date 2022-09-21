@@ -1,7 +1,6 @@
 `use strict`;
 const User = require('../models').db.user;
 
-
 const saveUser = async (req, res, next) => {
 
 

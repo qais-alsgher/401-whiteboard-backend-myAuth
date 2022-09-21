@@ -24,8 +24,8 @@ function start(port) {
     app.listen(port, () => { console.log(`the server start for port ${port}`) });
 }
 
-app.use(heandleErrorPageNotFound);
 app.use(heandleError);
+app.use(heandleErrorPageNotFound);
 
 module.exports = {
     start,

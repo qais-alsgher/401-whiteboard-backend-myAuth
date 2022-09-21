@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1663599958957" clover="3.2.0">
-  <project timestamp="1663599958958" name="All files">
-    <metrics statements="181" coveredstatements="114" conditionals="16" coveredconditionals="5" methods="31" coveredmethods="12" elements="228" coveredelements="131" complexity="0" loc="181" ncloc="181" packages="7" files="13" classes="13"/>
+<coverage generated="1663743308398" clover="3.2.0">
+  <project timestamp="1663743308398" name="All files">
+    <metrics statements="207" coveredstatements="157" conditionals="24" coveredconditionals="6" methods="36" coveredmethods="25" elements="267" coveredelements="188" complexity="0" loc="207" ncloc="207" packages="7" files="14" classes="14"/>
     <package name="401-whiteboard-backend-myAuth">
       <metrics statements="20" coveredstatements="19" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
       <file name="server.js" path="/home/qais/401-whiteboard-backend-myAuth/server.js">
@@ -29,52 +29,50 @@
       </file>
     </package>
     <package name="401-whiteboard-backend-myAuth.collections">
-      <metrics statements="21" coveredstatements="3" conditionals="2" coveredconditionals="0" methods="6" coveredmethods="1"/>
+      <metrics statements="21" coveredstatements="18" conditionals="2" coveredconditionals="2" methods="6" coveredmethods="6"/>
       <file name="use-comment-routes.js" path="/home/qais/401-whiteboard-backend-myAuth/collections/use-comment-routes.js">
-        <metrics statements="21" coveredstatements="3" conditionals="2" coveredconditionals="0" methods="6" coveredmethods="1"/>
+        <metrics statements="21" coveredstatements="18" conditionals="2" coveredconditionals="2" methods="6" coveredmethods="6"/>
         <line num="1" count="4" type="stmt"/>
         <line num="5" count="8" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
-        <line num="10" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="11" count="0" type="stmt"/>
-        <line num="13" count="0" type="stmt"/>
+        <line num="9" count="6" type="stmt"/>
+        <line num="10" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
         <line num="16" count="0" type="stmt"/>
-        <line num="21" count="0" type="stmt"/>
-        <line num="22" count="0" type="stmt"/>
-        <line num="24" count="0" type="stmt"/>
-        <line num="29" count="0" type="stmt"/>
-        <line num="30" count="0" type="stmt"/>
-        <line num="31" count="0" type="stmt"/>
-        <line num="33" count="0" type="stmt"/>
-        <line num="38" count="0" type="stmt"/>
-        <line num="39" count="0" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="29" count="2" type="stmt"/>
+        <line num="30" count="2" type="stmt"/>
+        <line num="31" count="2" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="38" count="2" type="stmt"/>
+        <line num="39" count="2" type="stmt"/>
         <line num="41" count="0" type="stmt"/>
-        <line num="48" count="0" type="stmt"/>
-        <line num="49" count="0" type="stmt"/>
+        <line num="48" count="1" type="stmt"/>
+        <line num="49" count="1" type="stmt"/>
         <line num="51" count="0" type="stmt"/>
         <line num="57" count="4" type="stmt"/>
       </file>
     </package>
     <package name="401-whiteboard-backend-myAuth.controllers">
-      <metrics statements="30" coveredstatements="18" conditionals="6" coveredconditionals="1" methods="3" coveredmethods="3"/>
+      <metrics statements="28" coveredstatements="8" conditionals="6" coveredconditionals="0" methods="3" coveredmethods="0"/>
       <file name="userControllers.js" path="/home/qais/401-whiteboard-backend-myAuth/controllers/userControllers.js">
-        <metrics statements="30" coveredstatements="18" conditionals="6" coveredconditionals="1" methods="3" coveredmethods="3"/>
+        <metrics statements="28" coveredstatements="8" conditionals="6" coveredconditionals="0" methods="3" coveredmethods="0"/>
         <line num="1" count="4" type="stmt"/>
         <line num="2" count="4" type="stmt"/>
         <line num="3" count="4" type="stmt"/>
         <line num="4" count="4" type="stmt"/>
         <line num="7" count="4" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="10" count="1" type="stmt"/>
-        <line num="12" count="1" type="stmt"/>
-        <line num="18" count="1" type="stmt"/>
-        <line num="19" count="1" type="stmt"/>
-        <line num="21" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="22" count="1" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="21" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="22" count="0" type="stmt"/>
         <line num="26" count="0" type="stmt"/>
         <line num="33" count="4" type="stmt"/>
-        <line num="34" count="1" type="stmt"/>
-        <line num="35" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
         <line num="36" count="0" type="stmt"/>
         <line num="39" count="0" type="stmt"/>
         <line num="40" count="0" type="stmt"/>
@@ -86,13 +84,13 @@
         <line num="52" count="0" type="stmt"/>
         <line num="55" count="0" type="stmt"/>
         <line num="60" count="4" type="stmt"/>
-        <line num="61" count="1" type="stmt"/>
-        <line num="62" count="1" type="stmt"/>
-        <line num="65" count="4" type="stmt"/>
+        <line num="61" count="0" type="stmt"/>
+        <line num="62" count="0" type="stmt"/>
+        <line num="70" count="4" type="stmt"/>
       </file>
     </package>
     <package name="401-whiteboard-backend-myAuth.error-handlers">
-      <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="2"/>
+      <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
       <file name="404.js" path="/home/qais/401-whiteboard-backend-myAuth/error-handlers/404.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="1" count="4" type="stmt"/>
@@ -100,33 +98,55 @@
         <line num="4" count="1" type="stmt"/>
       </file>
       <file name="500.js" path="/home/qais/401-whiteboard-backend-myAuth/error-handlers/500.js">
-        <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <line num="1" count="4" type="stmt"/>
         <line num="3" count="4" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
       </file>
     </package>
     <package name="401-whiteboard-backend-myAuth.middlewares">
-      <metrics statements="13" coveredstatements="10" conditionals="4" coveredconditionals="2" methods="1" coveredmethods="1"/>
-      <file name="userAuth.js" path="/home/qais/401-whiteboard-backend-myAuth/middlewares/userAuth.js">
-        <metrics statements="13" coveredstatements="10" conditionals="4" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <metrics statements="32" coveredstatements="13" conditionals="10" coveredconditionals="1" methods="2" coveredmethods="1"/>
+      <file name="bearer-auth.js" path="/home/qais/401-whiteboard-backend-myAuth/middlewares/bearer-auth.js">
+        <metrics statements="19" coveredstatements="5" conditionals="6" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="4" type="stmt"/>
         <line num="2" count="4" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
         <line num="5" count="4" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="15" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="6" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="15" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="16" count="0" type="stmt"/>
         <line num="17" count="0" type="stmt"/>
-        <line num="21" count="1" type="stmt"/>
-        <line num="27" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="28" count="0" type="stmt"/>
-        <line num="31" count="1" type="stmt"/>
-        <line num="34" count="0" type="stmt"/>
-        <line num="41" count="4" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="25" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="30" count="4" type="stmt"/>
+      </file>
+      <file name="userAuth.js" path="/home/qais/401-whiteboard-backend-myAuth/middlewares/userAuth.js">
+        <metrics statements="13" coveredstatements="8" conditionals="4" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="14" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="26" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="40" count="4" type="stmt"/>
       </file>
     </package>
     <package name="401-whiteboard-backend-myAuth.models">
-      <metrics statements="30" coveredstatements="29" conditionals="2" coveredconditionals="1" methods="5" coveredmethods="4"/>
+      <metrics statements="38" coveredstatements="31" conditionals="4" coveredconditionals="1" methods="9" coveredmethods="4"/>
       <file name="comment.model.js" path="/home/qais/401-whiteboard-backend-myAuth/models/comment.model.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="1" count="4" type="stmt"/>
@@ -145,7 +165,7 @@
         <line num="11" count="4" type="stmt"/>
         <line num="20" count="4" type="stmt"/>
         <line num="23" count="4" type="stmt"/>
-        <line num="24" count="1" type="stmt"/>
+        <line num="24" count="3" type="stmt"/>
         <line num="26" count="0" type="stmt"/>
         <line num="30" count="4" type="stmt"/>
         <line num="31" count="4" type="stmt"/>
@@ -164,16 +184,24 @@
         <line num="26" count="4" type="stmt"/>
       </file>
       <file name="user.model.js" path="/home/qais/401-whiteboard-backend-myAuth/models/user.model.js">
-        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <metrics statements="11" coveredstatements="5" conditionals="2" coveredconditionals="0" methods="5" coveredmethods="1"/>
         <line num="1" count="4" type="stmt"/>
-        <line num="3" count="4" type="stmt"/>
-        <line num="20" count="4" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="32" count="4" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="34" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="43" count="4" type="stmt"/>
       </file>
     </package>
     <package name="401-whiteboard-backend-myAuth.routes">
-      <metrics statements="61" coveredstatements="29" conditionals="0" coveredconditionals="0" methods="11" coveredmethods="0"/>
+      <metrics statements="62" coveredstatements="62" conditionals="0" coveredconditionals="0" methods="11" coveredmethods="11"/>
       <file name="comment.route.js" path="/home/qais/401-whiteboard-backend-myAuth/routes/comment.route.js">
-        <metrics statements="25" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="0"/>
+        <metrics statements="25" coveredstatements="25" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
         <line num="1" count="4" type="stmt"/>
         <line num="2" count="4" type="stmt"/>
         <line num="3" count="4" type="stmt"/>
@@ -183,25 +211,25 @@
         <line num="10" count="4" type="stmt"/>
         <line num="11" count="4" type="stmt"/>
         <line num="12" count="4" type="stmt"/>
-        <line num="15" count="0" type="stmt"/>
-        <line num="16" count="0" type="stmt"/>
-        <line num="22" count="0" type="stmt"/>
-        <line num="23" count="0" type="stmt"/>
-        <line num="24" count="0" type="stmt"/>
-        <line num="28" count="0" type="stmt"/>
-        <line num="29" count="0" type="stmt"/>
-        <line num="30" count="0" type="stmt"/>
-        <line num="34" count="0" type="stmt"/>
-        <line num="35" count="0" type="stmt"/>
-        <line num="36" count="0" type="stmt"/>
-        <line num="43" count="0" type="stmt"/>
-        <line num="44" count="0" type="stmt"/>
-        <line num="46" count="0" type="stmt"/>
-        <line num="47" count="0" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
         <line num="51" count="4" type="stmt"/>
       </file>
       <file name="post.route.js" path="/home/qais/401-whiteboard-backend-myAuth/routes/post.route.js">
-        <metrics statements="28" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="0"/>
+        <metrics statements="28" coveredstatements="28" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6"/>
         <line num="1" count="4" type="stmt"/>
         <line num="2" count="4" type="stmt"/>
         <line num="3" count="4" type="stmt"/>
@@ -212,35 +240,36 @@
         <line num="11" count="4" type="stmt"/>
         <line num="12" count="4" type="stmt"/>
         <line num="13" count="4" type="stmt"/>
-        <line num="16" count="0" type="stmt"/>
-        <line num="17" count="0" type="stmt"/>
-        <line num="23" count="0" type="stmt"/>
-        <line num="24" count="0" type="stmt"/>
-        <line num="25" count="0" type="stmt"/>
-        <line num="29" count="0" type="stmt"/>
-        <line num="30" count="0" type="stmt"/>
-        <line num="31" count="0" type="stmt"/>
-        <line num="35" count="0" type="stmt"/>
-        <line num="36" count="0" type="stmt"/>
-        <line num="37" count="0" type="stmt"/>
-        <line num="44" count="0" type="stmt"/>
-        <line num="45" count="0" type="stmt"/>
-        <line num="52" count="0" type="stmt"/>
-        <line num="53" count="0" type="stmt"/>
-        <line num="59" count="0" type="stmt"/>
-        <line num="60" count="0" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="52" count="1" type="stmt"/>
+        <line num="53" count="1" type="stmt"/>
+        <line num="59" count="1" type="stmt"/>
+        <line num="60" count="1" type="stmt"/>
         <line num="63" count="4" type="stmt"/>
       </file>
       <file name="user.route.js" path="/home/qais/401-whiteboard-backend-myAuth/routes/user.route.js">
-        <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="4" type="stmt"/>
         <line num="3" count="4" type="stmt"/>
         <line num="4" count="4" type="stmt"/>
         <line num="5" count="4" type="stmt"/>
-        <line num="7" count="4" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
         <line num="8" count="4" type="stmt"/>
         <line num="9" count="4" type="stmt"/>
-        <line num="11" count="4" type="stmt"/>
+        <line num="10" count="4" type="stmt"/>
+        <line num="12" count="4" type="stmt"/>
       </file>
     </package>
   </project>
