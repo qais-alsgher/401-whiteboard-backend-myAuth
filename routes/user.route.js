@@ -6,7 +6,7 @@ const userAuth = require('../middlewares/userAuth');
 const bearerAuth = require('../middlewares/bearer-auth');
 
 router.post('/singup', (userAuth.saveUser), singup);
-router.get('/login', login);
-router.post('/users', bearerAuth, allUser);
+router.post('/login', login);
+router.get('/users', bearerAuth, allUser);
 
 module.exports = router;
