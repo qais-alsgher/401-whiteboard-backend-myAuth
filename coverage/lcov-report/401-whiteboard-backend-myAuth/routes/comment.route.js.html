@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">40% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>10/25</span>
+                <span class='fraction'>25/25</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/5</span>
+                <span class='fraction'>5/5</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">40% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>10/25</span>
+                <span class='fraction'>25/25</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -127,39 +127,39 @@
 <span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -176,40 +176,40 @@ router.get('/comment/:id', getOneComment);
 router.delete('/comment/:id', deleteComment);
 router.put('/comment/:id', updatComment);
 &nbsp;
-async function <span class="fstat-no" title="function not covered" >getComment(</span>req, res) {
-    let comment = <span class="cstat-no" title="statement not covered" >await Comment.read();</span>
-<span class="cstat-no" title="statement not covered" >    res.status(200).json({</span>
+async function getComment(req, res) {
+    let comment = await Comment.read();
+    res.status(200).json({
         comment
     })
 };
 &nbsp;
-async function <span class="fstat-no" title="function not covered" >createComment(</span>req, res) {
-    let newComment = <span class="cstat-no" title="statement not covered" >req.body;</span>
-    const comment = <span class="cstat-no" title="statement not covered" >await Comment.create(newComment);</span>
-<span class="cstat-no" title="statement not covered" >    res.status(201).json(comment);</span>
+async function createComment(req, res) {
+    let newComment = req.body;
+    const comment = await Comment.create(newComment);
+    res.status(201).json(comment);
 };
 &nbsp;
-async function <span class="fstat-no" title="function not covered" >getOneComment(</span>req, res) {
-    const id = <span class="cstat-no" title="statement not covered" >req.params.id;</span>
-    const comment = <span class="cstat-no" title="statement not covered" >await Comment.read(id);</span>
-<span class="cstat-no" title="statement not covered" >    res.status(200).json({ comment });</span>
+async function getOneComment(req, res) {
+    const id = req.params.id;
+    const comment = await Comment.read(id);
+    res.status(200).json({ comment });
 };
 &nbsp;
-async function <span class="fstat-no" title="function not covered" >deleteComment(</span>req, res) {
-    const id = <span class="cstat-no" title="statement not covered" >req.params.id;</span>
-    const commentDeleted = <span class="cstat-no" title="statement not covered" >await Comment.delete(id);</span>
-<span class="cstat-no" title="statement not covered" >    res.status(204).json({</span>
+async function deleteComment(req, res) {
+    const id = req.params.id;
+    const commentDeleted = await Comment.delete(id);
+    res.status(204).json({
         message: `the deleted comment successful for id : ${id}`
     });
 &nbsp;
 };
 &nbsp;
-async function <span class="fstat-no" title="function not covered" >updatComment(</span>req, res) {
-    const id = <span class="cstat-no" title="statement not covered" >req.params.id;</span>
-    const updateData = <span class="cstat-no" title="statement not covered" >req.body;</span>
+async function updatComment(req, res) {
+    const id = req.params.id;
+    const updateData = req.body;
 &nbsp;
-    const commentUpdate = <span class="cstat-no" title="statement not covered" >await Comment.update(id, updateData);</span>
-<span class="cstat-no" title="statement not covered" >    res.status(200).json(commentUpdate);</span>
+    const commentUpdate = await Comment.update(id, updateData);
+    res.status(200).json(commentUpdate);
 }
 &nbsp;
 &nbsp;
@@ -220,7 +220,7 @@ module.exports = router;</pre></td></tr></table></pre>
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2022-09-19T15:05:58.907Z
+                at 2022-09-21T06:55:08.354Z
             </div>
         <script src="../../prettify.js"></script>
         <script>

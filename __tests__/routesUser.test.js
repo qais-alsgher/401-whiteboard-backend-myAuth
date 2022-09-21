@@ -6,17 +6,17 @@ jest.setTimeout(15000);
 
 describe('test user router', () => {
 
-    it('test get all user ', async () => {
+    it('test get all user without token ', async () => {
         const res = await request.get('/users');
-        expect(res.status).toEqual(200);
+        expect(res.status).toEqual(404);
     });
 
-    it('test login', async () => {
+    it('test login without header', async () => {
         const res = await request.post('/login');
-        expect(res.status).toEqual(200);
+        expect(res.status).toEqual(404);
     })
 
-    it('test singup', async () => {
+    it('test singup for exist user', async () => {
         const newUser = {
             userName: "abdullah",
             email: "abdullah@gmail",
@@ -24,7 +24,7 @@ describe('test user router', () => {
 
         }
         const res = await request.post('/singup').send(newUser);
-        expect(res.status).toEqual(201);
+        expect(res.status).toEqual(409);
     })
 
 })

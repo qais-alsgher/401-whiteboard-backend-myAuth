@@ -23,16 +23,16 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">76.92% </span>
+                <span class="strong">61.53% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>10/13</span>
+                <span class='fraction'>8/13</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">50% </span>
+                <span class="strong">25% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>2/4</span>
+                <span class='fraction'>1/4</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">76.92% </span>
+                <span class="strong">61.53% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>10/13</span>
+                <span class='fraction'>8/13</span>
             </div>
         
             
@@ -102,14 +102,12 @@
 <a name='L37'></a><a href='#L37'>37</a>
 <a name='L38'></a><a href='#L38'>38</a>
 <a name='L39'></a><a href='#L39'>39</a>
-<a name='L40'></a><a href='#L40'>40</a>
-<a name='L41'></a><a href='#L41'>41</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">4x</span>
+<a name='L40'></a><a href='#L40'>40</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -118,22 +116,22 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -146,7 +144,6 @@
 <span class="cline-any cline-yes">4x</span></td><td class="text"><pre class="prettyprint lang-js">`use strict`;
 const User = require('../models').db.user;
 &nbsp;
-&nbsp;
 const saveUser = async (req, res, next) =&gt; {
 &nbsp;
 &nbsp;
@@ -157,23 +154,23 @@ const saveUser = async (req, res, next) =&gt; {
             }
         });
 &nbsp;
-        <span class="missing-if-branch" title="if path not taken" >I</span>if (username) {
+        if (username) {
 &nbsp;
-<span class="cstat-no" title="statement not covered" >            return res.status(409).send('The Username alrady token');</span>
+            return res.status(409).send('The Username alrady token');
 &nbsp;
-        } else {
+        } else <span class="missing-if-branch" title="else path not taken" >E</span>{
 &nbsp;
-            const email = await User.findOne({
+            const email = <span class="cstat-no" title="statement not covered" >await User.findOne({</span>
                 where: {
                     email: req.body.email
                 }
             });
 &nbsp;
-            <span class="missing-if-branch" title="if path not taken" >I</span>if (email) {
+<span class="cstat-no" title="statement not covered" >            if (email) {</span>
 <span class="cstat-no" title="statement not covered" >                return res.status(409).send('The Email alrady token');</span>
             }
 &nbsp;
-            next();
+<span class="cstat-no" title="statement not covered" >            next();</span>
         }
     } catch (err) {
 <span class="cstat-no" title="statement not covered" >        console.log(err);</span>
@@ -190,7 +187,7 @@ module.exports = { saveUser };</pre></td></tr></table></pre>
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2022-09-19T15:05:58.907Z
+                at 2022-09-21T06:55:08.354Z
             </div>
         <script src="../../prettify.js"></script>
         <script>
