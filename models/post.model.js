@@ -18,7 +18,12 @@ const Post = (sequelize, DataTypes) => sequelize.define('Post', {
         type: DataTypes.STRING,
         allowNull: false,
         defaultValue: "https://cdn.pixabay.com/photo/2013/07/13/12/07/avatar-159236__340.png"
+    },
+    userId: {
+        type: DataTypes.INTEGER,
+        allowNull: false
     }
+
 
 
 });

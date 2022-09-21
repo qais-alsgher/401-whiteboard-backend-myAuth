@@ -35,17 +35,23 @@ postModel.hasMany(commentModel, { foreignKey: 'postId', sourceKey: 'id' });
 // to know the connint that related specific post  
 commentModel.belongsTo(postModel, { foreignKey: 'postId', targetKey: 'id' });
 
+db = {};
+db.sequelize = sequelize;
+db.user = require('./user.model')(sequelize, DataTypes);
+
+
+db.user.hasMany(postModel, { foreignKey: 'userId', sourceKey: 'id' });
+postModel.belongsTo(db.user, { foreignKey: 'userId', targetKey: 'id' })
+
 const postCollection = new collection(postModel);
 const commentCllection = new collection(commentModel);
 
-db = {};
-db.sequelize = sequelize;
-db.user = require('./user.model')(sequelize, DataTypes),
 
 
-    module.exports = {
-        db: db,
-        Post: postCollection,
-        Comment: commentCllection,
-        commentModel: commentModel
-    }
+module.exports = {
+    db: db,
+    Post: postCollection,
+    Comment: commentCllection,
+    commentModel: commentModel,
+    postModel: postModel
+}
