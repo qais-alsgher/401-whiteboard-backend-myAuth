@@ -62,7 +62,7 @@ const allUser = async (req, res) => {
     res.status(200).json(users);
 }
 
-// const deleteUser = async (req, res) => {
+// const getUserPostComment() = async (req, res) => {
 //     const users = await User.destroy();
 //     res.status(200).json(users);
 // }
