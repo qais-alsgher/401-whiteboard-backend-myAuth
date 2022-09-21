@@ -6,12 +6,12 @@ jest.setTimeout(15000);
 
 describe('test user router', () => {
 
-    it('test get all user without token ', async () => {
+    xit('test get all user without token ', async () => {
         const res = await request.get('/users');
         expect(res.status).toEqual(404);
     });
 
-    it('test login without header', async () => {
+    xit('test login without header', async () => {
         const res = await request.post('/login');
         expect(res.status).toEqual(404);
     })
