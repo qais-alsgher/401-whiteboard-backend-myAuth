@@ -10,6 +10,7 @@ router.post('/comment', createComment);
 router.get('/comment/:id', getOneComment);
 router.delete('/comment/:id', deleteComment);
 router.put('/comment/:id', updatComment);
+router.get('/comment/:postId/:userId', getUserComent);
 
 async function getComment(req, res) {
     let comment = await Comment.read();
@@ -46,6 +47,14 @@ async function updatComment(req, res) {
     const commentUpdate = await Comment.update(id, updateData);
     res.status(200).json(commentUpdate);
 }
+
+async function getUserComent(req, res) {
+
+    const { postId, userId } = req.params;
+    const comentUser = await Comment.readTow(postId, userId);
+    res.status(200).json(comentUser);
+}
+
 
 
 module.exports = router;
