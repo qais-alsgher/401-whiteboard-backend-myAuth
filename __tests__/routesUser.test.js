@@ -2,9 +2,9 @@
 const server = require('../server').app;
 const supertest = require('supertest');
 const request = supertest(server);
-jest.setTimeout(15000);
 
-describe('test user router', () => {
+
+xdescribe('test user router', () => {
 
     xit('test get all user without token ', async () => {
         const res = await request.get('/users');
@@ -16,7 +16,7 @@ describe('test user router', () => {
         expect(res.status).toEqual(404);
     })
 
-    it('test singup for exist user', async () => {
+    xit('test singup for exist user', async () => {
         const newUser = {
             userName: "abdullah",
             email: "abdullah@gmail",

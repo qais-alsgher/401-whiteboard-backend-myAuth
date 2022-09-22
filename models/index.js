@@ -39,9 +39,13 @@ db = {};
 db.sequelize = sequelize;
 db.user = require('./user.model')(sequelize, DataTypes);
 
-
+// for give user your posts
 db.user.hasMany(postModel, { foreignKey: 'userId', sourceKey: 'id' });
-postModel.belongsTo(db.user, { foreignKey: 'userId', targetKey: 'id' })
+postModel.belongsTo(db.user, { foreignKey: 'userId', targetKey: 'id' });
+
+// to give ispesfic comment 
+db.user.hasMany(commentModel, { foreignKey: 'userId', sourceKey: 'id' });
+commentModel.belongsTo(db.user, { foreignKey: 'userId', sourceKey: 'id' });
 
 const postCollection = new collection(postModel);
 const commentCllection = new collection(commentModel);

@@ -23,7 +23,17 @@ class useCommentRouttes {
         } catch (e) {
             console.log(`Error for creation from modle : (${this.model.name})`);
         }
+    };
+
+    async readTow(idOne, idTow) {
+        try {
+            return await this.model.findOne({ where: { id: idOne, id: idTow } });
+        } catch (err) {
+            console.log(err);
+        }
+
     }
+
 
     async update(id, obj) {
         try {
