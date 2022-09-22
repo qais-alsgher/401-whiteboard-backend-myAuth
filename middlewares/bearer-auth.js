@@ -7,10 +7,10 @@ const bearerAuth = async (req, res, next) => {
         next("you are not authorized");
 
     const token = req.headers.authorization.split(' ').pop();
-    console.log(token);
+
     try {
         const validUser = user.authenticateToke(token);
-        console.log(validUser);
+
         const userInfoExist = await users.findOne({ where: { userName: validUser.userName } });
         if (userInfoExist) {
             req.user = userInfoExist;
