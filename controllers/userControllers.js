@@ -15,7 +15,6 @@ const singup = async (req, res) => {
             // use the bcrypt to make password secure
             password: await bcrypt.hash(password, 10)
         };
-        // console.log(data);
         const user = await User.create(data);
 
         if (user) {
