@@ -6,6 +6,7 @@ const userAuth = require('../middlewares/userAuth');
 const bearerAuth = require('../middlewares/bearer-auth');
 const { postModel, db } = require('../models');
 
+
 router.post('/singup', (userAuth.saveUser), singup);
 router.post('/login', login);
 router.get('/users', bearerAuth, allUser);

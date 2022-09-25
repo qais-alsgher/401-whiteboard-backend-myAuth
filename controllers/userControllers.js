@@ -7,13 +7,14 @@ const User = require('../models/index').db.user;
 const singup = async (req, res) => {
 
     try {
-        const { userName, email, password } = req.body;
+        const { userName, email, password, role } = req.body;
 
         const data = {
             userName,
             email,
             // use the bcrypt to make password secure
-            password: await bcrypt.hash(password, 10)
+            password: await bcrypt.hash(password, 10),
+            role
         };
         const user = await User.create(data);
 
