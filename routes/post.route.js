@@ -1,11 +1,11 @@
 `use strict`;
 const express = require('express');
 const router = express.Router();
-
+const bearerAuth = require('../middlewares/bearer-auth');
 const { Post, commentModel } = require('../models/index');
 
 // Routes 
-router.get('/post', getPost);
+router.get('/post', bearerAuth, getPost);
 router.post('/post', createPost);
 router.get('/post/:id', getOnePost);
 router.delete('/post/:id', deletePost);
