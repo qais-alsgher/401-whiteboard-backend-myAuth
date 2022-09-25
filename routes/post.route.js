@@ -3,13 +3,14 @@ const express = require('express');
 const router = express.Router();
 const bearerAuth = require('../middlewares/bearer-auth');
 const { Post, commentModel } = require('../models/index');
+const aclAuth = require('../middlewares/acl');
 
 // Routes 
 router.get('/post', bearerAuth, getPost);
-router.post('/post', createPost);
-router.get('/post/:id', getOnePost);
-router.delete('/post/:id', deletePost);
-router.put('/post/:id', updatPost);
+router.post('/post', bearerAuth, createPost);
+router.get('/post/:id', bearerAuth, getOnePost);
+router.delete('/post/:id', bearerAuth, aclAuth, deletePost);
+router.put('/post/:id', bearerAuth, aclAuth, updatPost);
 router.get('/PostComment', getPostComment);
 
 async function getPost(req, res) {
