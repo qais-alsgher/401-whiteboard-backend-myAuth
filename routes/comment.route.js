@@ -1,9 +1,8 @@
 `use strict`;
 const express = require('express');
 const router = express.Router();
-const bearerAuth = require('../middlewares/bearer-auth');
 const { Comment } = require('../models/index');
-const bearerAuth = require('../middlewares/bearer-auth');
+
 
 // Routes 
 router.get('/comment', getComment);
