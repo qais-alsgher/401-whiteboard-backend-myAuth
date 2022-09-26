@@ -49,10 +49,10 @@ const login = async (req, res) => {
         if (isSam) {
             res.status(200).json(user);
         } else {
-            res.status(401).send('Username or Password is wrong Please try again')
+            res.status(401).send('Emial or Password is wrong Please try again')
         }
     } else {
-        res.status(401).send('Username or Password is wrong Please try again')
+        res.status(401).send('Email or Password is wrong Please try again')
     }
 
 };
