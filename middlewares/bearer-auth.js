@@ -15,10 +15,8 @@ const bearerAuth = async (req, res, next) => {
         if (userInfoExist) {
             req.user = userInfoExist;
             req.token = userInfoExist.token;
-            // console.log(userInfoExist);
             next();
         } else {
-
             next("you are not authorized");
         }
 
