@@ -5,8 +5,8 @@ const Post = require('./post.model');
 const Comment = require('./comment.model');
 const collection = require('../collections/use-comment-routes');
 
-const POSTGRES_URL = process.env.DATABASE_URL || 'postgres://localhost:5432/postgres';
-// const POSTGRES_URL = 'postgres://localhost:5432/postgres';
+// const POSTGRES_URL = process.env.DATABASE_URL || 'postgres://localhost:5432/postgres';
+const POSTGRES_URL = 'postgres://localhost:5432/postgres';
 
 const sequelizeOption = {
     dialectOptions: {
@@ -17,8 +17,8 @@ const sequelizeOption = {
     }
 };
 
-const sequelize = new Sequelize(POSTGRES_URL, sequelizeOption);
-// const sequelize = new Sequelize(POSTGRES_URL);
+// const sequelize = new Sequelize(POSTGRES_URL, sequelizeOption);
+const sequelize = new Sequelize(POSTGRES_URL);
 
 sequelize.authenticate().then(() => {
     console.log('Database is conection to postgres');
