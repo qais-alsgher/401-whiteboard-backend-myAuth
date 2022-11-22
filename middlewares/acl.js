@@ -1,4 +1,3 @@
-
 `use strict`;
 const { Post } = require('../models/index');
 
